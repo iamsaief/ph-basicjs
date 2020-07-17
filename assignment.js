@@ -3,29 +3,28 @@
  */
 function feetToMile(num) {
 	if (num > 0) {
-		const result = (num / 5280).toFixed(4);
-		console.log(result);
+		const mile = (num / 5280).toFixed(4);
+		return mile;
 	} else {
-		console.log("⚠️  Please, give me a positive number");
+		return "⚠️  Please, give me a positive number";
 	}
 }
-// feetToMile(-1);
-// feetToMile(10);
+// console.log(feetToMile(-1));
+// console.log(feetToMile(10));
 
 /**
  * Problem-2 : Calculate Wood
  */
 function woodCalculator(numOfChair, numOfTable, numOfBed) {
-	let totalWood = 0;
 	const chair = numOfChair * 1;
 	const table = numOfTable * 3;
 	const bed = numOfBed * 5;
 
-	totalWood = chair + table + bed;
+	let totalWood = chair + table + bed;
 
-	console.log("🌳 Wood needed = ", totalWood, " cubic feet");
+	return `🌳 Wood needed = ${totalWood} cubic feet`;
 }
-// woodCalculator(5, 2, 5);
+// console.log(woodCalculator(5, 2, 5));
 
 /**
  * Problem-3 : Calculate Brick
@@ -49,12 +48,13 @@ function brickCalculator(numOfFloor) {
 			totalFeet = numOfFloor * 15;
 		}
 	}
+
 	totalBrick = totalFeet * 1000;
-	console.log("🏠 Brick needed = ", totalBrick);
+	return `🏠 Brick needed = ${totalBrick}`;
 }
-// brickCalculator(6);
-// brickCalculator(11);
-// brickCalculator(21);
+// console.log(brickCalculator(6));
+// console.log(brickCalculator(11));
+// console.log(brickCalculator(26));
 
 /**
  * Problem-4 : Find who has the smallest name
@@ -70,6 +70,8 @@ function tinyFriend(friendsArray) {
 			smallestName = friendsArray[i];
 		}
 	}
-	console.log(smallestName);
+	return smallestName;
 }
-// tinyFriend(["Shakib", "Tamim", "Mushi", "Mash", "Mahmudullah", "Mustafiz"]);
+// console.log(
+// 	tinyFriend(["Shakib", "Tamim", "Mushi", "Mash", "Mahmudullah", "Mustafiz"])
+// );
