@@ -72,4 +72,4 @@ function tinyFriend(friendsArray) {
 	}
 	console.log(smallestName);
 }
-tinyFriend(["Shakib", "Tamim", "Mushi", "Mash", "Mahmudullah", "Mustafiz"]);
+// tinyFriend(["Shakib", "Tamim", "Mushi", "Mash", "Mahmudullah", "Mustafiz"]);
