@@ -6,7 +6,7 @@ function feetToMile(num) {
 		const result = (num / 5280).toFixed(4);
 		console.log(result);
 	} else {
-		console.error("⚠️  Please, give me a positive number");
+		console.log("⚠️  Please, give me a positive number");
 	}
 }
 // feetToMile(-1);
@@ -72,4 +72,4 @@ function tinyFriend(friendsArray) {
 	}
 	console.log(smallestName);
 }
-// tinyFriend(["Shakib", "Tamim", "Mushi", "Mash", "Mahmudullah", "Mustafiz"]);
+tinyFriend(["Shakib", "Tamim", "Mushi", "Mash", "Mahmudullah", "Mustafiz"]);
